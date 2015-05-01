@@ -21,7 +21,7 @@ module LessonsIndexer
 
       go_to @env[:dir_name]
 
-      index = "# Index for the " + @env[:course_title] + " course\n\n"
+      index = "# Handout index for the " + @env[:course_title] + " course\n\n"
 
       get_lessons.each do |lesson|
         index += display_lesson_link(lesson)
